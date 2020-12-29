@@ -1,0 +1,15 @@
+{
+  "name": "modbus-simulator",
+  "version": "1.0.0",
+  "description": "simulator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node modbus_simulator.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "modbus-serial": "^7.8.1"
+  }
+}
