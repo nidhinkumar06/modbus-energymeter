@@ -8,16 +8,17 @@
 
 **ABOUT**
 
-Monitor the Modbus devices InfluxDB via Telegraf and visualize the metrics in Chronograf
+Monitor the Modbus devices with InfluxDB via Telegraf and visualize the metrics in Chronograf
 
 **WHAT WE ARE GOING TO DO**
 
-We are goind the simulate the energy meters through Modbus TCP connection using NodeJS application.Telegraf agent will collect the metrics from the TCP connection of Modbus and send it to the InfluxDB which is hosted in DigitalOcean Droplet(VM Instance)
+* We are going to simulate the energy meters through Modbus TCP connection using NodeJS application.
+* Telegraf agent will collect the metrics from the TCP connection of Modbus and send it to the InfluxDB which is hosted in DigitalOcean Droplet(VM Instance)
 
 **WHAT IS DONE IN THIS PoC**
 
 1. Simualting multiple energy meters using NodeJS application
-2. Connecting the Modbus devices to Influx Via Modbus Telegraf Input Plugin
+2. Connecting the Modbus devices to InfluxDB Via Modbus Telegraf Input Plugin
 3. Visualizing the Energy meters data in Dashboard(Only one energy meter is shown in the dashboard)
 
 **TO BE DONE / INPROGRESS**
@@ -46,13 +47,13 @@ We are goind the simulate the energy meters through Modbus TCP connection using 
 
 ### Configuration
 
-1. Once the repository is cloned to your local machine navigate to the project directory and do install the node packages using the command `npm install`
+1. Once the repository is cloned to your local machine navigate to the project directory and install the node packages using the command `npm install`
 2. Once the node packages are installed. Open a new terminal(project directory) and run the NodeJs application using the command `npm run start`
 3. Open another terminal(Project directory) and now we will run the telegraf with the configuration file which is available in the project directory `modbus.conf`
 4. Run the telegraf using the command `telegraf --config /home/nidhin/Desktop/modbus.conf`
 
 *Note*
-Makesure the path of the `modbus.conf` file  should from the project directory and not the path mentioned above i.e. `/home/nidhin/Desktop`
+Makesure the path of the `modbus.conf` file  should be the project directory path and not the path mentioned above i.e. `/home/nidhin/Desktop`
 
 
 Now you could see the telegraf running which will collect the data from the modbus and sent it to `InfluxDB`.
