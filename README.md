@@ -1,6 +1,9 @@
 <div align="center">
   <h1>Monitor Modbus Devices with InfluxDB</h1>
   <br>
+  <div align="center">
+    <img src="./assets/modbus-influxdata.webp" alt="aog" height="105">
+    </div>
 </div>
 
 **ABOUT**
@@ -26,7 +29,7 @@ We are goind the simulate the energy meters through Modbus TCP connection using 
 
 
 <div align="center">
-  <img src="./assets/simualtion.png" alt="aog" height="105">
+  <img src="./assets/simualtion.png" alt="aog" height="300">
 </div>
 
 
@@ -58,7 +61,7 @@ Now you could see the telegraf running which will collect the data from the modb
 
 * Open the InfluxDB by click the link [Click here to open InfluxDB](http://128.199.28.87:8086/)
 <div align="center">
-  <img src="./assets/login.jpg" alt="aog" height="105">
+  <img src="./assets/login.jpg" alt="aog" height="300">
 </div>
 
 * Add the credentials which you have received in Email
@@ -67,19 +70,19 @@ Now you could see the telegraf running which will collect the data from the modb
 
 * Once logged in successfully, You could see a screen like below
 <div align="center">
-  <img src="./assets/home.jpg" alt="aog" height="105">
+  <img src="./assets/home.jpg" alt="aog" height="300">
 </div>
 
 * Click on `Boards` and then select `EnergyMeter` which you could see the screen like below
 
 <div align="center">
-  <img src="./assets/dashboard.jpg" alt="aog" height="105">
+  <img src="./assets/dashboard.jpg" alt="aog" height="300">
 </div>
 
 * Now Click the `EnergyMeter` dashboard where you could see the dashboard of EnergyMeter like below
 
 <div align="center">
-  <img src="./assets/dashbaordview.jpg" alt="aog" height="105">
+  <img src="./assets/dashbaordview.jpg" alt="aog" height="300">
 </div>
 
 ### Explore InfluxDB
@@ -87,7 +90,7 @@ Now you could see the telegraf running which will collect the data from the modb
 * If u need to do some queries click on the `Explore` tab on the left side like below
 
 <div align="center">
-  <img src="./assets/explore.jpg" alt="aog" height="105">
+  <img src="./assets/explore.jpg" alt="aog" height="300">
 </div>
 
 * Now Select `EnergyMeter` in the bucket and then `Modbus` and then change the dropdown on the third filter to `name` where you could see the list of devices which is connected in Modbus (EnergyMeter1, EnergyMeter2, ...)
